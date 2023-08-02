@@ -15,9 +15,14 @@ module.exports = {
       },
       colors: {
         "header-green": "#01402E",
+        "header-darkGreen": "#013325",
+        "header-lightGreen": "#1a5343",
       },
       textColor: {
         "header-yellow": "#FFE494",
+      },
+      transitionProperty: {
+        height: "height",
       },
     },
   },
