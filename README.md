@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DM - Landing Page
 
-## Getting Started
+This is the repository for the first project of a Challenge that i'm doing with a group with friends, where we'll develop 4 frontend projects and 1 backend project to improve our development skills, each of us will develop the same project individually, we'll compete between us and discuss about our codes, we'll also push each other to commit at least once everyday.
 
-First, run the development server:
+**First Project - Tier 1**
+It's not uncommon knowledge that webdevelopers usually start their portfolio, or even in their jobs with a Landing Page for a Product, so, starting with this premise, our tier 1 project is also a Landing Page, the project doesn't have a chosen Layout, as it's also not uncommon for customers to contact Developers and ask them to use their creativity, even though most of the time, we're not UI Designers.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Basically, you were asked by a fictional customer to develop the landing page for a product or organization, he didn't gave you any example and also told you he doesn't have a UI Team, you'll need to use your own creativity to create a product that satisfies your customer.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## User Stories
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [ ] User can see on the page, one or more images that describes the product/organization
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [ ] User can see texts that describes the product/organization objectives/features
 
-## Learn More
+- [ ] User can see how this is advantageous
 
-To learn more about Next.js, take a look at the following resources:
+- [ ] User can see a contact section
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] User see dynamic animations throughout the navigation of the landing page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Bonus
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] User can contact staff via form
+- [ ] Web animations without using any library, with only CSS and JS
