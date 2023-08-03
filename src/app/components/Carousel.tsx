@@ -37,28 +37,21 @@ const Carousel = () => {
           onSwipeRight={handlePrevSlide}
           className="flex overflow-scroll overflow-y-hidden w-full h-[80vh]"
         >
-          <span className="min-w-[100vw] h-full">
-            <Image
-              className="h-full w-full object-cover"
-              alt="Carousel Image"
-              src={carouselSecondImage}
-            />
-            {imageArray.map((image, index) => {
-              if (index === currentSlide) {
-                return (
-                  <span key={index}>
-                    <Image
-                      src={image}
-                      layout="fill"
-                      objectFit="cover"
-                      alt="carousel image"
-                      className="animate-fadeIn"
-                    />
-                  </span>
-                );
-              }
-            })}
-          </span>
+          {imageArray.map((image, index) => {
+            if (index === currentSlide) {
+              return (
+                <span key={index}>
+                  <Image
+                    src={image}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="carousel image"
+                    className="animate-fadeIn"
+                  />
+                </span>
+              );
+            }
+          })}
         </Swipe>
         <button
           onClick={handlePrevSlide}
