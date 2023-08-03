@@ -2,6 +2,7 @@
 import Image from "next/image";
 import sol from "../../../public/sol.png";
 import List from "@/assets/icons/List";
+import X from "@/assets/icons/X";
 import { useState } from "react";
 
 const navbarElements = [
@@ -17,7 +18,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav
-      className={`fixed transition-height ease-linear duration-500 w-screen bg-header-green flex flex-col items-center ${
+      className={`fixed top-0 transition-height ease-linear duration-500 w-screen bg-header-green flex flex-col items-center ${
         isOpen ? "h-screen" : "h-28"
       } lg:flex-row  lg:justify-evenly lg:h-20 drop-shadow-2xl`}
     >
@@ -34,18 +35,27 @@ const Header = () => {
         }}
         className="text-white lg:hidden"
       >
-        <List className="w-6 h-6 absolute top-6 right-4" />
+        <List
+          className={`w-6 h-6 absolute top-6 right-4 ${
+            isOpen ? "invisible" : "visible"
+          }`}
+        />
+        <X
+          className={`w-6 h-6 absolute top-6 right-4 ${
+            isOpen ? "visible" : "invisible"
+          }`}
+        />
       </button>
       <ul
-        className={`flex flex-col list-none p-1 pt-10 items-center text-white gap-4 ${
+        className={`flex flex-col list-none p-1 pt-10 items-center text-white gap-8 text-2xl ${
           isOpen ? "" : "invisible"
-        } lg:visible lg:flex-row lg:pt-0 `}
+        } lg:visible lg:flex-row lg:pt-0 lg:text-base lg:gap-4 `}
       >
         {navbarElements.map((element, index) => (
           <li
             key={`navElement-${index}`}
             className={`transition-opacity ease-linear delay-75  duration-300 hover:text-header-yellow hover:transition-all   hover:tracking-wider
-            }  ${isOpen ? "opacity-100" : "opacity-0"} lg:opacity-100`}
+            }  ${isOpen ? "opacity-100" : "opacity-0"} lg:opacity-100   `}
           >
             <a href={element.href}>{element.title}</a>
           </li>
