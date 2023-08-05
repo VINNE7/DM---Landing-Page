@@ -34,6 +34,10 @@ const Carousel = () => {
       <div className="w-full relative">
         <Swipe
           onSwipeLeft={handleNextSlide}
+          onSwipeDown={undefined}
+          onSwipeUp={undefined}
+          onSwipeEnd={undefined}
+          onSwipeStart={undefined}
           onSwipeRight={handlePrevSlide}
           className="flex overflow-scroll overflow-y-hidden w-full h-[80vh]"
         >
