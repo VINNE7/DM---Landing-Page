@@ -10,10 +10,34 @@ import { useState } from "react";
 import Swipe from "react-easy-swipe";
 
 const imageArray = [
-  carouselSecondImage,
-  carouselThirdImage,
-  carouselFourthImage,
-  carouselFifthImage,
+  {
+    image: carouselSecondImage,
+    alt: "carousel Image",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat aperiam necessitatibus voluptatem facilis natus voluptates quos deserunt repellendus nam! Et voluptatem eius similique, quisquam impedit ullam earum. Corporis, aliquam?",
+    title: "Lorem",
+  },
+  {
+    image: carouselThirdImage,
+    alt: "carousel Image",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat aperiam necessitatibus voluptatem facilis natus voluptates quos deserunt repellendus nam! Et voluptatem eius similique, quisquam impedit ullam earum. Corporis, aliquam?",
+    title: "Lorem",
+  },
+  {
+    image: carouselFourthImage,
+    alt: "carousel Image",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat aperiam necessitatibus voluptatem facilis natus voluptates quos deserunt repellendus nam! Et voluptatem eius similique, quisquam impedit ullam earum. Corporis, aliquam?",
+    title: "Lorem",
+  },
+  {
+    image: carouselFifthImage,
+    alt: "carousel Image",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat aperiam necessitatibus voluptatem facilis natus voluptates quos deserunt repellendus nam! Et voluptatem eius similique, quisquam impedit ullam earum. Corporis, aliquam?",
+    title: "Lorem",
+  },
 ];
 
 const Carousel = () => {
@@ -41,17 +65,21 @@ const Carousel = () => {
           onSwipeRight={handlePrevSlide}
           className="flex overflow-scroll overflow-y-hidden w-full h-[80vh]"
         >
-          {imageArray.map((image, index) => {
+          {imageArray.map((element, index) => {
             if (index === currentSlide) {
               return (
                 <span key={index}>
                   <Image
-                    src={image}
+                    src={element.image}
                     layout="fill"
                     objectFit="cover"
-                    alt="carousel image"
+                    alt={element.alt}
                     className="animate-fadeIn"
                   />
+                  <div className="absolute p-12 h-full flex flex-col justify-end text-white bg-black opacity-40">
+                    <h2 className="text-7xl">{element.title}</h2>
+                    <p className="text-xl">{element.description}</p>
+                  </div>
                 </span>
               );
             }
