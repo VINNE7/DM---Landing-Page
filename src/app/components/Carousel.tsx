@@ -2,8 +2,8 @@
 import Image from "next/image";
 import carouselSecondImage from "../../../public/carouselSecondImage.jpg";
 import carouselThirdImage from "../../../public/carouselThirdImage.jpg";
-import carouselFourthImage from "../../../public/carouselFourthImage.jpg";
-import carouselFifthImage from "../../../public/carouselFifthImage.jpg";
+import carouselSixthImage from "../../../public/carouselSixthImag.jpg";
+import carouselSeventhImage from "../../../public/carouselSeventhImage.jpg";
 import CaretLeft from "../../assets/icons/CaretLeft";
 import CaretRight from "../../assets/icons/CaretRight";
 import { useState } from "react";
@@ -14,29 +14,29 @@ const imageArray = [
     image: carouselSecondImage,
     alt: "carousel Image",
     description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat aperiam necessitatibus voluptatem facilis natus voluptates quos deserunt repellendus nam! Et voluptatem eius similique, quisquam impedit ullam earum. Corporis, aliquam?",
-    title: "Lorem",
+      "Acreditamos que colocar os jovens em posições de liderança é uma forma efetiva de desenvolvê-los para a vida adulta, lidar com contratempos e ter espaço para aprender diversas lições com os próprios erros e acertos é fundamental para um jovem rapaz, o Capítulo Sol Nascente da Ordem DeMolay é um lugar como esse.",
+    title: "Protagonismo Juvenil",
   },
   {
     image: carouselThirdImage,
     alt: "carousel Image",
     description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat aperiam necessitatibus voluptatem facilis natus voluptates quos deserunt repellendus nam! Et voluptatem eius similique, quisquam impedit ullam earum. Corporis, aliquam?",
-    title: "Lorem",
+      "O ato de doar o seu tempo e trabalho para o próximo é, não só uma tentativa para auxiliar os que precisam, mas também uma forma de edificar o jovem, e fortalecer os ensinamentos das virtudes da Ordem DeMolay, o Capítulo Sol Nascente incentiva, apoia e tem o auxílio dos Tios Maçons da Loja Fraternidade N° 3376 do Grande Oriente do Brasil. ",
+    title: "Filantropia",
   },
   {
-    image: carouselFourthImage,
+    image: carouselSixthImage,
     alt: "carousel Image",
     description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat aperiam necessitatibus voluptatem facilis natus voluptates quos deserunt repellendus nam! Et voluptatem eius similique, quisquam impedit ullam earum. Corporis, aliquam?",
-    title: "Lorem",
+      "Há os que digam que uma vida feliz é cheia de amigos, aqui, há amigos e irmãos, o Capítulo Sol Nascente sempre esteve unido em trabalhos com outros capítulos, fortalecendo os laços e garantindo a união da primeira região administrativa. ",
+    title: "Companheirismo",
   },
   {
-    image: carouselFifthImage,
+    image: carouselSeventhImage,
     alt: "carousel Image",
     description:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat aperiam necessitatibus voluptatem facilis natus voluptates quos deserunt repellendus nam! Et voluptatem eius similique, quisquam impedit ullam earum. Corporis, aliquam?",
-    title: "Lorem",
+      "É rotineiro que nos capítulos da Ordem DeMolay hajam trabalhos instrutivos apresentados sobre determinado assunto pertinente aos jovens, como primeiros socorros, artes e até mesmo apresentações sobre profissões com trabalhadores diversas áreas como Bombeiros, Professores, Psicólogos, Policiais, etc.",
+    title: "Trabalhos Instrutivos",
   },
 ];
 
@@ -76,9 +76,13 @@ const Carousel = () => {
                     alt={element.alt}
                     className="animate-fadeIn"
                   />
-                  <div className="absolute p-12 h-full flex flex-col justify-end text-white bg-black opacity-40">
-                    <h2 className="text-7xl">{element.title}</h2>
-                    <p className="text-xl">{element.description}</p>
+                  <div className="absolute w-full h-full flex flex-col justify-end  pb-6 px-6 text-white bg-[rgba(0,0,0,0.4)]">
+                    <h2 className="text-xl sm:text-2xl opacity-100 mb-4 xl:text-7xl">
+                      {element.title}
+                    </h2>
+                    <p className="text-sm sm:block sm:text-xl opacity-100 xl:text-xl ">
+                      {element.description}
+                    </p>
                   </div>
                 </span>
               );
