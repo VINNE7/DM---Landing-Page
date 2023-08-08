@@ -73,6 +73,7 @@ const Carousel = () => {
                     src={element.image}
                     layout="fill"
                     objectFit="cover"
+                    priority
                     alt={element.alt}
                     className="animate-fadeIn"
                   />
