@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import carouselSecondImage from "../../../public/carouselSecondImage.jpg";
-import carouselThirdImage from "../../../public/carouselThirdImage.jpg";
-import carouselSixthImage from "../../../public/carouselSixthImag.jpg";
-import carouselSeventhImage from "../../../public/carouselSeventhImage.jpg";
+import carouselSecondImage from "../../../public/carouselSecondImage-min.jpg";
+import carouselThirdImage from "../../../public/carouselThirdImage-min.jpg";
+import carouselSixthImage from "../../../public/carouselSixthImage-min.jpg";
+import carouselSeventhImage from "../../../public/carouselSeventhImage-min.jpg";
 import CaretLeft from "../../assets/icons/CaretLeft";
 import CaretRight from "../../assets/icons/CaretRight";
 import { useState } from "react";
