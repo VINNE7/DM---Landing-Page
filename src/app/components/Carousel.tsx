@@ -21,7 +21,7 @@ const imageArray = [
     image: carouselThirdImage,
     alt: "carousel Image",
     description:
-      "O ato de doar o seu tempo e trabalho para o próximo é, não só uma tentativa para auxiliar os que precisam, mas também uma forma de edificar o jovem, e fortalecer os ensinamentos das virtudes da Ordem DeMolay, o Capítulo Sol Nascente incentiva, apoia e tem o auxílio dos Tios Maçons da Loja Fraternidade N° 3376 do Grande Oriente do Brasil. ",
+      "O ato de doar o seu tempo e trabalho para o próximo é, não só uma tentativa para auxiliar os necessitados, mas também uma forma de edificar o jovem, e fortalecer os ensinamentos das virtudes da Ordem DeMolay, o Capítulo Sol Nascente incentiva, apoia e tem o auxílio dos Tios Maçons da Loja Fraternidade N° 3376 do Grande Oriente do Brasil. ",
     title: "Filantropia",
   },
   {
