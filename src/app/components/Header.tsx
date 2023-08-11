@@ -9,9 +9,9 @@ const navbarElements = [
   { title: "Início", href: "#" },
   { title: "Ordem DeMolay", href: "#" },
   { title: "Onde estamos", href: "#" },
-  { title: "Nossos Trabalhos", href: "#" },
+  { title: "Nossos trabalhos", href: "#" },
   { title: "Depoimentos", href: "#" },
-  { title: "Fale Conosco", href: "#" },
+  { title: "Fale conosco", href: "#" },
 ];
 
 const Header = () => {
